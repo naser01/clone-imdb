@@ -2,7 +2,10 @@
   "name": "clone-imdb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "engines": {
+    "node": "12.16.3"
+  },
   "scripts": {
     "server": "set NODE_ENV=production&& node backend/server.js",
     "start": "node client/scripts/start.js",
