@@ -6,7 +6,7 @@
   "scripts": {
     "server": "set NODE_ENV=production&& node backend/server.js",
     "start": "node client/scripts/start.js",
-    "build": "node client/scripts/build.js"
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,9 @@
     "url": "https://github.com/naser01/clone-imdb/issues"
   },
   "homepage": "https://github.com/naser01/clone-imdb#readme",
+  "devDependencies": {
+    "react-scripts": "0.8.4"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -96,3 +99,4 @@
     "workbox-webpack-plugin": "4.3.1"
   }
 }
+
