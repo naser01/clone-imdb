@@ -9,7 +9,7 @@
   "scripts": {
     "server": "set NODE_ENV=production&& node backend/server.js",
     "start": "node client/scripts/start.js",
-    "build": "node client/scripts/build.js"
+    "build": "react-scripts build && cp client/build/index.html client/public/index.html"
   },
   "repository": {
     "type": "git",
