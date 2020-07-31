@@ -8,8 +8,7 @@
   },
   "scripts": {
     "server": "set NODE_ENV=production&& node backend/server.js",
-    "start": "node client/scripts/start.js",
-    "build": "node client/scripts/build.js"
+    "start": "node client/scripts/start.js"
   },
   "repository": {
     "type": "git",
