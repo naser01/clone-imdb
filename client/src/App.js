@@ -38,9 +38,9 @@ class App extends Component {
             </div>
             <div className="container">
               <Switch>
-                <UnAuthRoute exact path='/' component={Home} />
-                <AuthRoute exact path='/login' component={Login} />
-                <AuthRoute exact path='/signup' component={Signup} />
+                <Link exact path='/' component={Home} />
+                <Link exact path='/login' component={Login} />
+                <Link exact path='/signup' component={Signup} />
               </Switch>
             </div>
           </Router>
