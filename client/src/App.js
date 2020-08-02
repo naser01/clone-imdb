@@ -39,8 +39,6 @@ class App extends Component {
             <div className="container">
               <Switch>
                 <Link exact path='/' component={Home} />
-                <Link exact path='/login' component={Login} />
-                <Link exact path='/signup' component={Signup} />
               </Switch>
             </div>
           </Router>
@@ -49,5 +47,8 @@ class App extends Component {
     );
   }
 }
+
+//<AuthRoute exact path='/login' component={Login} />
+//<AuthRoute exact path='/signup' component={Signup} />
 
 export default App;
