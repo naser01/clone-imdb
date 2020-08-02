@@ -24,15 +24,6 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "mongoose": "^5.9.25",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
-    "dotenv-expand": "^5.1.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
     "@babel/core": "7.9.0",
     "@material-ui/core": "^4.10.2",
     "@material-ui/icons": "^4.9.1",
@@ -47,11 +38,15 @@
     "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-preset-react-app": "^9.1.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
+    "dotenv-expand": "^5.1.0",
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "3.0.3",
@@ -60,6 +55,7 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "express": "^4.17.1",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
     "html-webpack-plugin": "4.0.0-beta.11",
@@ -68,8 +64,12 @@
     "jest-environment-jsdom-fourteen": "1.0.1",
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
+    "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",
     "mini-css-extract-plugin": "0.9.0",
+    "mongoose": "^5.9.25",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -101,4 +101,3 @@
     "workbox-webpack-plugin": "4.3.1"
   }
 }
-
