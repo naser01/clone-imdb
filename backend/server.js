@@ -28,7 +28,7 @@ if (!dev) {
   app.use('*', express.static(path.resolve(__dirname, '..', 'client', 'build')));
 
   app.get('*', (res, req) => {
-    res.send(path.resolve(__dirname, '..','client', 'build', 'index.html'))
+    res.end(path.resolve(__dirname, '..','client', 'build', 'index.html'))
   })
 }
 
