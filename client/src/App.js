@@ -31,15 +31,15 @@ class App extends Component {
         <Provider store={store}>
           <Router>
             <div>
-              <Link to='/login'>login</Link>
+              <Link to='/login'>logioo</Link>
               <Link to='/'>home</Link>
               <Link to='signup'>signup</Link>
               <div >logout</div>
             </div>
             <div className="container">
-              <Switch>
+              
                 <Link exact path='/' component={Home} />
-              </Switch>
+              
             </div>
           </Router>
         </Provider>
@@ -48,7 +48,9 @@ class App extends Component {
   }
 }
 
+//<Switch>
 //<AuthRoute exact path='/login' component={Login} />
 //<AuthRoute exact path='/signup' component={Signup} />
+//</Switch>
 
 export default App;
