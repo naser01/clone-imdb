@@ -57,7 +57,7 @@ const movieRoute = require('./routes/movies')
 app.use('/account', signupRoute)
 app.use('/movies', movieRoute)
 
-//const server = createServer(app);
-app.listen(PORT, () => console.log(`Server is starting on PORT ${PORT}`));
+const server = createServer(app);
+server.listen(PORT, () => console.log(`Server is starting on PORT ${PORT}`));
 
 
