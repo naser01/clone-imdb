@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
+//const cors = require('cors');
 const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
@@ -10,7 +10,7 @@ const dev = app.get('env') !== 'production';
 const normalizePort = port => parseInt(port, 10);
 const PORT = normalizePort(process.env.PORT || 5000);
 
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
