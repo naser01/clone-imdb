@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 const morgan = require('morgan');
-
+const dev = app.get('env') !== 'production';
 
 const normalizePort = port => parseInt(port, 10);
 const PORT = normalizePort(process.env.PORT || 5000);
@@ -22,14 +22,12 @@ connection.once('open', () => {
 });
 
 
-const dev = app.get('env') !== 'production';
-
 if (!dev) {
   app.use(express.static(path.resolve(__dirname, '..', 'client', 'build')));
   app.use('*', express.static(path.resolve(__dirname, '..', 'client', 'build')));
 
   app.get('*', (res, req) => {
-    res.send(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    res.send(path.resolve(__dirname, '..','client', 'build', 'index.html'))
   })
 }
 
